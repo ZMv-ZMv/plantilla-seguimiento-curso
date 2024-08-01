@@ -1,4 +1,5 @@
 ### En este archivo se registrará las características del curso para diferenciarlo de otros, así como el avance que se hace del mismo.
+Este repositorio deberá copiarse dentro de la carpeta de desarrollo del curso y cambiarsele el nombre a algo apriado al curso. Una vez ahí se empezará con el curso
 
 Curso: 
 
