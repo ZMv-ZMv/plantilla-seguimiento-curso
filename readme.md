@@ -24,7 +24,7 @@ web/pc/otro(especificar)
 TAGS / TEMAS:
 
 
-Reposotorios GitHub :
+REPOSITORIOS GITHUB:
 https://github.com/*/*.git
 https://github.com/*/*.git
 
