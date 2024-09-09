@@ -4,7 +4,10 @@ Este repositorio siempre permanecerá en la carpeta 'Practicando' ubicada en el 
 
 CURSO:
 
-WEB:
+IMAGEN(ES) MINIATURAS:
+para rápida identificación.
+
+WEB OFICIAL:
 
 INICIO DEL CUROS:
 dd mm yyyy
@@ -16,7 +19,7 @@ AUTOR:
 PROFESOR:
 
 ORIGEN:
-web/pc/otro(especificar)
+udemy/youtube/pc/otro(especificar)
 
 TAGS / TEMAS:
 
@@ -24,8 +27,10 @@ REPOSITORIOS GITHUB:
 https://github.com/*/*.git
 https://github.com/*/*.git
 
-CARPETA PRINCIPAL:
-Version Control\
+CARPETA PRINCIPAL EN PC:
+
+- si el curso es WEB, esta ruta es de los archivos de trabajo
+  Version Control\
 
 CARPETAS (CAPÍTULOS):
 Capitulo 1 - nombre del tema\
@@ -33,12 +38,15 @@ Capitulo 2 - nombre del tema\
 Capitulo 3 - nombre del tema\
 
 CONTENIDO:
-18 archivos
-13 carpetas
 
----
+- si el curso es WEB, no es necesario poner este dato
+  18 archivos
+  13 carpetas
 
-****************************\***************************** HISTORIAL DE COMMMITS
+ULTIMO VISIONADO:
+C:\Users\LV\Downloads\modern-html-css-beginning\6 - Box Model Positioning\62 - Borders.mp4
+
+\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\***\*\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\*** HISTORIAL DE COMMMITS
 
 Para el seguimiento y avance del curso, aquí se va registrando los commits más importantes de acuerdo a las lecciones, por ejemplo el inicio de cada clase (video), un tema importante que resaltar, etc. Los videos o capítulos que no merezcan un commit o que teniendo commits no sean de trascendencia para el curso, no deberían registrarse.
 Lo ideal es que al principio del curso se ponga todas las carpetas y archivos de video, luego con el seguimiento del curso, se va actualizando los commits para cada video si es necesario.
@@ -60,3 +68,13 @@ nnnnnnn 008. nmmbre del segundo video
 nnnnnnn 009. nombre del tercer video
 
 nnnnnnn = hash del commit
+
+\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*** PARA VIDEOS EN PC
+En esta área irán los enlaces a los videos del curso.
+Si es un curso en PC la ruta será del archivo local, si es en web la dirección de la página web.
+La idea de esta área es que en cada video revisado se pueda escribir comentarios o apuntar lo que sea resaltante del video.
+Además, de ser necesario, se pueden incluir tags de los temas tocados en cada video para rápida indentificación de los temas vistos.
+
+<video class="videoClase" type="video/mp4" controls src="RUTA DEL VIDEO 1.mp4"></video>
+<video class="videoClase" type="video/mp4" controls src="RUTA DEL VIDEO 2.mp4"></video>
+<video class="videoClase" type="video/mp4" controls src="RUTA DEL VIDEO 3.mp4"></video>
