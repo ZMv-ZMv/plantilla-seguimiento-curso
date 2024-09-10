@@ -2,46 +2,77 @@
 
 Este repositorio siempre permanecerá en la carpeta 'Practicando' ubicada en el escritorio, y dentro de este repositorio se registrará el avance de cada curso según convenga.
 
-CURSO:
+La estructura de las carpetas dentro de 'Practicando' y cómo se están llevando los cursos es:
 
-IMAGEN(ES) MINIATURAS:
+> Desktop
+>   > Practicando
+>     >\_GNRL
+>       Plantilla-seguimiento-curso
+>       (carpeta donde se guardará este archivo para el formateo general del seguimiento de los cursos)
+>     > AutoCAD
+>     > Cpp
+>     > Excel
+>     > Python
+>     > WEB
+>     > ... Otros temas
+>     (estos temas no son los cursos en sí, los cursos están dentro de estas carpetas)
+
+Dentro de la carpeta 'Practicando' se ubicarán carpetas por temas a practicar y dentro de estos temas los cursos propiamente dichos.
+-TODOS- los cursos llevados deben tener un registro en estas carpetas dentro de su respectivo tema, sean cursos con origen en PC, Youtube, Udemy o le que sea, deben registrarse en esta carpeta para que quede como fuente de consulta a futuro y como verificación si un curso ya se llevo y no estar repitiendolo.
+
+Al empezar un curso, dependiendo del origen del mismo se procederá de la siguiente manera:
+
+1. Con origen en PC:
+   1.1. En la ruta de los videos del curso (que no es la carpeta 'Practicando' sino en otra unidad de almacenamiento), se deberá incluir una carpeta llamada 'seguimiento-curso' en la que se deberá incluir un archivo 'nombre-de-curso.html' con unicamente el 'ENCABEZADO DEL CURSO' (desarrollado más abajo), esto para indicar si el curso está siendo llevado.
+   1.2. Luego, en la carpeta 'Practicando', dentro de sus respectivas carpetas de tema y nombre de curso, se incluirá este archivo 'nombre-de-curso.html' en el que se incluirá todo el desarrollo del curso, incluyendo links a los videos, documentación, apuntes, etc.
+2. Con origen Web (Youtube, Udemy, otros):
+   de frente se incluirá el archivo 'nombre-de-curso.html' tal cual el punto 1.2.
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ENCABEZADO DE CURSO
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+-> CURSO:
+
+-> IMAGEN(ES) MINIATURAS:
 para rápida identificación.
 
-WEB OFICIAL:
+-> WEB OFICIAL:
 
-INICIO DEL CUROS:
+-> INICIO DEL CUROS:
 dd mm yyyy
 
-DESCRIPCIÓN:
+-> DESCRIPCIÓN:
 
-AUTOR:
+-> AUTOR:
 
-PROFESOR:
+-> PROFESOR:
 
-ORIGEN:
+-> ORIGEN:
 udemy/youtube/pc/otro(especificar)
 
-TAGS / TEMAS:
+-> TAGS / TEMAS:
 
-REPOSITORIOS GITHUB:
+-> REPOSITORIOS GITHUB:
 https://github.com/*/*.git
 https://github.com/*/*.git
 
-CARPETA PRINCIPAL EN PC:
+-> CARPETA PRINCIPAL EN PC:
+si el curso es WEB, esta ruta es de los archivos de trabajo
 
-- si el curso es WEB, esta ruta es de los archivos de trabajo
-  Version Control\
-
-CARPETAS (CAPÍTULOS):
+-> CARPETAS (CAPÍTULOS):
 Capitulo 1 - nombre del tema\
 Capitulo 2 - nombre del tema\
 Capitulo 3 - nombre del tema\
 
-CONTENIDO:
+-> CONTENIDO CUANTITATIVO:
+si el curso es WEB, no es necesario poner este dato
+18 archivos
+13 carpetas
 
-- si el curso es WEB, no es necesario poner este dato
-  18 archivos
-  13 carpetas
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||| FIN DEL ENCABEZADO DE CURSO
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 ULTIMO VISIONADO:
 C:\Users\LV\Downloads\modern-html-css-beginning\6 - Box Model Positioning\62 - Borders.mp4
