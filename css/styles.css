@@ -1,0 +1,113 @@
+/* ************************************************************************* */
+/* ************************************************************ RESET STYLES */
+/* ************************************************************************* */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  &:visited {
+    color: inherit;
+  }
+}
+ul {
+  list-style: none;
+}
+*::before {
+  font-family: 'Font Awesome 6 Free';
+  text-rendering: auto;
+}
+
+/**/
+ul.carpetas {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  li {
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+    &::before {
+      content: '\f07b';
+      margin-right: 0.5rem;
+      font-weight: 700;
+      color: gray;
+    }
+    span {
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+    .file {
+      &::before {
+        content: '\f1c9';
+        margin-right: 0.5rem;
+        font-weight: 300;
+        color: gray;
+      }
+    }
+  }
+}
+ul.proceso {
+  margin: 1rem;
+  /* padding: 1rem; */
+  /* background-color: #f4f4f4; */
+  border-radius: 8px;
+  li {
+    margin-left: 1.5rem;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+
+
+.encabezado-curso {
+  margin: 2rem;
+  .titulo {
+    font-weight: 700;
+  }
+  .item {
+    /* border: 1px solid #000; */
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    .placeholder {
+      font-style: italic;
+      font-size: 0.8rem;
+      color: #777;
+    }
+  }
+}
+.container {
+  display: flex;
+  .panel {
+    flex-basis: 100%;
+    background-color: #f4f4f4;
+    margin: 0.25rem;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  img {
+    width: 200px;
+  }
+}

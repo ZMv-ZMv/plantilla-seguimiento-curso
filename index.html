@@ -3,10 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>*** P R A C T I C A N D O ***</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>PRACTICANDO - PLANTILLA DE SEGUIMIENTO DE CURSOS</title>
 </head>
 <body>
   
+  <h1>Plantilla de seguimiento de cusos</h1>
+  <p>En este archivo se registrarán los cursos que se estén llevando o que ya se hayan llevado para diferenciarlos de otros, así como el avance que se hace de los mismos.</p>
+
+<p>Este repositorio siempre permanecerá en la carpeta 'Practicando' ubicada en el escritorio, y dentro de este repositorio se registrará el avance de cada curso según convenga.</p>
+
+<p>La estructura de las carpetas dentro de 'Practicando' y cómo se están llevando los cursos es:</p>
+
+<ul class="carpetas">
+  <li>Desktop
+    <ul>
+      <li>Pracitcando
+        <ul>
+          <li>_GNRL <span>(donde se guardará este documento para el formateo general del seguimiento de cursos)</span>
+            <ul>
+              <li>.git</li>
+              <li>css</li>
+              <li>img</li>
+              <li>js</li>
+              <li class="file">index.html</li>
+              <li class="file">readme.md</li>
+            </ul>
+          </li>
+          <li>AutoCAD</li>
+          <li>Cpp</li>
+          <li>Excel</li>
+          <li>Python</li>
+          <li>WEB</li>
+          <li>... otros temas <span>(estos temas no son los cursos en sí, cada tema - carpeta tiene sus respectivos cursos dentro)</span></li>
+        </ul>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+<p>Dentro de la carpeta 'Practicando' se ubicarán carpetas por temas a practicar y dentro de estos temas los cursos propiamente dichos.</p>
+<p>-TODOS- los cursos llevados deben tener un registro en estas carpetas dentro de su respectivo tema, sean cursos con origen en PC, Youtube, Udemy o le que sea, deben registrarse en esta carpeta para que quede como fuente de consulta a futuro y como verificación si un curso ya se llevo y no estar repitiendolo.</p>
+
+<p>Al empezar un curso, dependiendo del origen del mismo se procederá de la siguiente manera:</p>
+<ul class="proceso">
+  <li><span>1. </span>Con origen en PC
+    <ul>
+      <li>
+        <p><span>1.1. </span>En la ruta de los videos del curso (que no es la carpeta 'Practicando' sino en otra unidad de almacenamiento), se deberá incluir una carpeta llamada 'seguimiento-curso' en la que se deberá incluir un archivo 'nombre-de-curso.html' con unicamente el 'ENCABEZADO DEL CURSO' (desarrollado más abajo), esto para indicar si el curso está siendo llevado.</p>
+      </li>
+      <li>
+        <p><span>1.2. </span>Luego, en la carpeta 'Practicando', dentro de sus respectivas carpetas de tema y nombre de curso, se incluirá este archivo 'nombre-de-curso.html' en el que se incluirá todo el desarrollo del curso, incluyendo links a los videos, documentación, apuntes, etc.</p>
+      </li>
+    </ul>
+  </li>
+  <li><span>2. </span>Con origen Web (Youtube, Udemy, otros): de frente se incluirá el archivo 'nombre-de-curso.html' tal cual el punto 1.2.
+  </li>
+</ul>
+
+<div class="encabezado-curso">
+  
+  <p class="titulo">
+    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||<br>
+    |||||||||||||||||||||||||||||||||||||||||||||||||||| ENCABEZADO DE CURSO<br>
+    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||<br>
+  </p>
+
+  <div class="container">
+    <div class="left panel">
+      <div class="item">
+        <h4>CURSO:</h4>
+      </div>
+    
+      <div class="item">
+        <h4>WEB OFICIAL:</h4>
+      </div>
+    
+      <div class="item">
+        <h4>INICIO DEL CUROS:</h4>
+        <p class="placeholder">dd mm yyyy</p>
+      </div>
+    
+      <div class="item">
+        <h4>DESCRIPCIÓN:</h4>
+      </div>
+    
+      <div class="item">
+        <h4>AUTOR:</h4>
+      </div>
+    
+      <div class="item">
+        <h4>PROFESOR:</h4>
+      </div>
+    
+      <div class="item">
+        <h4>ORIGEN:</h4>
+        <p class="placeholder">udemy/youtube/pc/otro(especificar)</p>
+      </div>
+    
+      <div class="item">
+        <h4>TAGS / TEMAS:</h4>
+      </div>
+    
+      <div class="item">
+        <h4>REPOSITORIOS GITHUB:</h4>
+        <p class="placeholder">https://github.com/*/*.git</p>
+      </div>
+    
+      <div class="item">
+        <h4>CARPETA PRINCIPAL EN PC:</h4>
+        <p class="placeholder">si el curso es WEB, esta ruta es de los archivos de trabajo y siempre como sub carpeta de 'Practicando'</p>
+      </div>
+    
+      <div class="item">
+        <h4>CONTENIDO CUANTITATIVO:</h4>
+        <p class="placeholder">
+          nn archivos <br>
+          nn carpetas <br>
+          si el curso es WEB, no es necesario poner este dato
+        </p>
+      </div>
+    </div>
+    <div class="right panel">
+      <div class="item">
+        <h4>IMAGEN(ES) MINIATURAS:</h4>
+        <p class="placeholder">para rápida identificación.</p>
+        <div class="imgs">
+          <img src="./img/00.png" alt="">
+          <img src="./img/01.png" alt="">
+          <img src="./img/02.jpg" alt="">
+          <img src="./img/03.jpg" alt="">
+          <img src="./img/04.jpg" alt="">
+          <img src="./img/05.webp" alt="">
+          <img src="./img/06.jpg" alt="">
+          <img src="./img/07.jpg" alt="">
+          <img src="./img/08.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <h4>SUB CARPETAS (CAPÍTULOS):</h4>
+    <p class="placeholder">
+      Capitulo 1 - nombre del tema\<br>
+      Capitulo 2 - nombre del tema\<br>
+      Capitulo 3 - nombre del tema\<br>
+    </p>
+  </div>
+  
+  
+  <p class="titulo">
+    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||<br>
+    ||||||||||||||||||||||||||||||||||||||||||||| FIN DEL ENCABEZADO DE CURSO <br>
+    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||<br>
+  </p>
+</div>
+
+ULTIMO VISIONADO:
+C:\Users\LV\Downloads\modern-html-css-beginning\6 - Box Model Positioning\62 - Borders.mp4
+
+\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\***\*\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\*** HISTORIAL DE COMMMITS
+
+Para el seguimiento y avance del curso, aquí se va registrando los commits más importantes de acuerdo a las lecciones, por ejemplo el inicio de cada clase (video), un tema importante que resaltar, etc. Los videos o capítulos que no merezcan un commit o que teniendo commits no sean de trascendencia para el curso, no deberían registrarse.
+Lo ideal es que al principio del curso se ponga todas las carpetas y archivos de video, luego con el seguimiento del curso, se va actualizando los commits para cada video si es necesario.
+Sólo Se hará un commit cada vez que se inicie un tema que sea importante, de otra forma se dejará que avance el curso incluso si se va avanzando los capítulos y estos no son importantes, no se debe hacer commits.
+Cuando se haga un commit de un capitulo (entiéndase por capítulo una carpera que contiene uno o varios videos del tema) y que necesite un commit, deberá hacerse inmediatamente un commit vacío de nombre 'registro', que nos permitirá incluir el hash del commit anterior (el del capítulo) en este registro.
+
+nnnnnnn **_ PRIMER COMMIT _**
+Capitulo 1 - nombre del tema\ # nombre de carpeta de capítulo
+nnnnnnn 001. nombre del primer video
+nnnnnnn 002. nmmbre del segundo video
+nnnnnnn 003. nombre del tercer video
+Capitulo 2 - nombre del tema\ # nombre de carpeta de capítulo
+nnnnnnn 004. nombre del primer video
+nnnnnnn 005. nmmbre del segundo video
+nnnnnnn 006. nombre del tercer video
+Capitulo 3 - nombre del tema\ # nombre de carpeta de capítulo
+nnnnnnn 007. nombre del primer video
+nnnnnnn 008. nmmbre del segundo video
+nnnnnnn 009. nombre del tercer video
+
+nnnnnnn = hash del commit
+
+\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*** PARA VIDEOS EN PC
+En esta área irán los enlaces a los videos del curso.
+Si es un curso en PC la ruta será del archivo local, si es en web la dirección de la página web.
+La idea de esta área es que en cada video revisado se pueda escribir comentarios o apuntar lo que sea resaltante del video.
+Además, de ser necesario, se pueden incluir tags de los temas tocados en cada video para rápida indentificación de los temas vistos.
+
+<video class="videoClase" type="video/mp4" controls src="RUTA DEL VIDEO 1.mp4"></video>
+<video class="videoClase" type="video/mp4" controls src="RUTA DEL VIDEO 2.mp4"></video>
+<video class="videoClase" type="video/mp4" controls src="RUTA DEL VIDEO 3.mp4"></video>
+
   
 
 </body>
