@@ -32,11 +32,18 @@ ul {
   text-rendering: auto;
 }
 
-/**/
+/* VARIABLES */
+:root {
+  --item-background: #f1f1f1;
+  --placeholder: #777;
+  --fa-icon: grey;
+}
+
+
 ul.carpetas {
   margin: 1rem;
   padding: 1rem;
-  background-color: #f4f4f4;
+  background-color: var(--item-background);
   border-radius: 8px;
   li {
     margin-left: 1.5rem;
@@ -45,7 +52,7 @@ ul.carpetas {
       content: '\f07b';
       margin-right: 0.5rem;
       font-weight: 700;
-      color: gray;
+      color: var(--fa-icon);
     }
     span {
       font-size: 0.85rem;
@@ -56,7 +63,7 @@ ul.carpetas {
         content: '\f1c9';
         margin-right: 0.5rem;
         font-weight: 300;
-        color: gray;
+        color: var(--fa-icon);
       }
     }
   }
@@ -80,15 +87,14 @@ ul.proceso {
     font-weight: 700;
     font-size: 1.5rem;
     margin: 1rem 0;
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     &::after {
       content: '';
-      background-color: #000;
-      position: absolute;
-      width: 100%;
+      flex: 1;
       height: 1px;
-      top: 50%;
-      margin-left: 0.5rem;
+      background-color: #000;
     }
   }
   
@@ -98,38 +104,55 @@ ul.proceso {
   gap: 0.5rem;
   .panel {
     flex-basis: 100%;
-    background-color: #f4f4f4;
+    background-color: var(--item-background);
     border-radius: 5px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    .item {
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-      .placeholder {
-        font-style: italic;
-        font-size: 0.8rem;
-        color: #777;
-      }
+    padding-bottom: 1.5rem;
+  }
+  
+}
+
+.item,
+.sub-carpetas {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  h4 {
+    margin-bottom: .25rem;
+    &::before {
+      content: '\f0a9';
+      font-size: 0.85rem;
+      margin-right: 0.25rem;
+      color: var(--fa-icon);
     }
   }
-  .imgs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3px;
+  .dato {
+    margin:0 1.1rem;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
   }
-  img {
-    width: 200px;
-  }
-}
-.sub-carpetas {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  background-color: #f4f4f4;
-  border-radius: 5px;
-  padding: 1.5rem 0.5rem;
   .placeholder {
+    margin-left: 1.1rem;
+    margin-bottom: 0.25rem;
     font-style: italic;
     font-size: 0.8rem;
-    color: #777;
+    color: var(--placeholder);
   }
+}
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+img {
+  width: 200px;
+}
+
+.sub-carpetas {
+  margin-top: 0.5rem;
+  background-color: var(--item-background);
+  border-radius: 5px;
+  padding: 1.5rem 0.5rem;
+
 }
