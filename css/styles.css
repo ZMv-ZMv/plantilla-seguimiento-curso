@@ -20,6 +20,7 @@ img {
 }
 a {
   text-decoration: none;
+  color: inherit;
   &:visited {
     color: inherit;
   }
@@ -158,4 +159,19 @@ ul.proceso {
   border-radius: 5px;
   padding: 1.5rem 0.5rem;
 
+}
+
+.desarrollo {
+  font-size: 2rem;
+  margin: 5rem auto;
+  padding: 2.5rem;
+  text-align: center;
+  color: white;
+  background-color: #000;
+  border-radius: 1rem;
+  p{
+    font-size: 1rem;
+    color: #777;
+    font-style: italic;
+  }
 }
