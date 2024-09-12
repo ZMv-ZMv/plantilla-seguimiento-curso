@@ -140,13 +140,16 @@ ul.proceso {
     color: var(--placeholder);
   }
 }
-.imgs {
+.right .imgs {
+  background-color: var(--item-background);
+  padding: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 3px;
-}
-img {
-  width: 200px;
+  gap: 5px;
+  img {
+    max-width: 200px;
+  }
 }
 
 .sub-carpetas {
