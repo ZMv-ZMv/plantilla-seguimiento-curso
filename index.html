@@ -14,81 +14,87 @@
 </head>
 <body>
   
-  <h1>Plantilla de seguimiento de cusos</h1>
-  <p>En este archivo se registrarán los cursos que se estén llevando o que ya se hayan llevado para diferenciarlos de otros, así como el avance que se hace de los mismos.</p>
+  <h1>Procedimiento y Plantilla para el desarrollo de cusos</h1>
 
-<p>Este repositorio siempre permanecerá en la carpeta 'Practicando' ubicada normalmente en el escritorio, y dentro de esta carpeta se registrará, dentro de cada tema respectivo, el avance de cada curso según convenga.</p>
+  <h2>CONFIGURACIÓN Y PLANTILLA GENERAL DE CURSOS</h2>
+  <p>Para la gestión general de los cursos, se debe crear la carpeta 'Practicando' la cual debe estar ubicada en el escritorio o en la raíz de alguna unidad de almacenamientode de una pc local. A fututo cuando las velocidades de almacenamiento y transferencia de red lo permitan se podría almacenar en una unidad de red para que las difetentes computadoras conectadas a la red puedan compartir esta carpeta.</p>
+  <p>Dentro de esta carpeta se crearán como carpetas internas los temas generales que se requieran aprender y dentro de estos temas (carpetas), se irán agregando los cursos específicos.</p>
+  <p>Dentro de la carpeta 'Practicando' se creará también la carpeta '_GNRL' que contendrá toda la información y archivos para la configuración general de los cursos como son este mismo archivo (index.html) y sus dependencias (css, js, img, etc.), el archivo 'calcularID.xlsx', entre otros, que definirán cómo se deberá desarrollar los cursos. Esta carpeta '_GNRL' tabién será un repositorio GIT.</p>
+  <p>La estructura de las carpetas dentro de 'Practicando' y cómo se están llevando los cursos es como en el siguiente gráfico:</p>
 
-<p>La estructura de las carpetas dentro de 'Practicando' y cómo se están llevando los cursos es:</p>
-
-<ul class="carpetas">
-  <li>...
-    <ul>
-      <li>Pracitcando
-        <ul>
-          <li>_GNRL <span>(donde se guardará este documento para el formateo general del seguimiento de cursos)</span>
-            <ul>
-              <li>.git</li>
-              <li>css</li>
-              <li>img</li>
-              <li>js</li>
-              <li class="file">calcularID.xlsx</li>
-              <li class="file">index.html</li>
-            </ul>
-          </li>
-          <li>AutoCAD</li>
-          <li>Cpp</li>
-          <li>Excel</li>
-          <li>Python</li>
-          <li>WEB</li>
-          <li>... otros temas <span>(estos temas no son los cursos en sí, cada tema - carpeta tiene sus respectivos cursos dentro)</span></li>
-        </ul>
-      </li>
-      
-    </ul>
-  </li>
-</ul>
-
+  <ul class="carpetas">
+    <li>...
+      <ul>
+        <li>Pracitcando
+          <ul>
+            <li>_GNRL <span>(donde se guardará este documento para el formateo general del seguimiento de cursos)</span>
+              <ul>
+                <li>.git</li>
+                <li>css</li>
+                <li>img</li>
+                <li>js</li>
+                <li class="file">calcularID.xlsx</li>
+                <li class="file">index.html</li>
+              </ul>
+            </li>
+            <li>AutoCAD</li>
+            <li>Cpp</li>
+            <li>Excel</li>
+            <li>Python</li>
+            <li>WEB</li>
+            <li>... otros temas <span>(estos temas no son los cursos en sí, cada tema - carpeta tiene sus respectivos cursos dentro)</span></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </li>
+  </ul>
 
 <p>Dentro de la carpeta 'Practicando' se ubicarán carpetas por temas a practicar y dentro de estos temas los cursos propiamente dichos.</p>
-<p>-TODOS- los cursos llevados deben tener un registro en estas carpetas dentro de su respectivo tema, sean cursos con origen en PC, Youtube, Udemy o le que sea, deben registrarse en esta carpeta para que quede como fuente de consulta a futuro y como verificación si un curso ya se llevo y no estar repitiendolo.</p>
+<p>-TODOS- los cursos llevados deben tener un registro en estas carpetas dentro de su respectivo tema, sean cursos con origen en PC, Youtube, Udemy o le que sea, deben registrarse en esta carpeta para que quede como fuente de consulta a futuro y como verificación si un curso ya se llevo y no estar repitiéndolo.</p>
+<p>Esta ubicación para el seguimiento y desarrollo de los cursos es la 'Carpeta de Práctica' del curso, NO es el almacenamiento de videos o recursos pesados ya que estos normalmente exigen mucho almacenamiento y esta ubicación no es la adecuada para ello, en su lugar existirá la 'Carpeta de Recursos'. Ambas carpetas, de práctica y de recursos, son explicadas a mayor detalle más abajo.</p>
 
 <h2>DESARROLLO DE UN CURSO</h2>
 
-<p>Cuando se empeice a desarrollar un curso se deberá tener en cuenta su origen: si es curso en la web, es decir, Youtube o Udemy u otro, o si es un curso que se tiene almacenado de formal local. Dependiendo de ese origen se procederá de la siguiente manera:</p>
+<h3>Configuración de la carpeta de práctica y de la carpeta de recursos</h3>
+
+<p>Cuando se empiece a desarrollar un curso y teniendo en cuenta su origen, se deberá configurar la carpeta de práctica y la carpeta de recursos. Este origen se define si es curso en la web, es decir, Youtube o Udemy u otro, o si es un curso que se tiene almacenado de formal local. Dependiendo de este origen se procederá a configurar las carpetas respectivas de la siguiente manera:</p>
 
 <ul class="proceso">
-  <li><b>1. Con origen en PC: </b>son cursos que han sido descargados o que los videos se tienen almacenados de forma local, en la PC o en almacenamiento externo de algún tipo. Este almacenamiento será la 'Carpeta de Recursos' para este tipo de cursos y normalmente tendrá el mismo o similar nombre que el curso.
+  <li><p><b>1. Con origen en PC: </b>son cursos que han sido descargados <span class="tachado">de manera pirata</span> o que los videos se tienen almacenados de forma local, en la PC o en almacenamiento externo de algún tipo. Este almacenamiento será la 'Carpeta de Recursos' para este tipo de cursos y normalmente tendrá el mismo o similar nombre que el curso.</p>
     <ul>
       <li>
-        <p><b>1.1. </b>Si el curso se esta llevando o ya se ha llevado, en la 'Carpeta de Recursos' (carpeta de almacenamiento), se deberá incluir una carpeta llamada <em>'_DATOS-DE-CURSO'</em>, en caso el curso no se ha iniciado, no es necesario incluir esta carpeta. Esta carpeta NO es un repositorio GIT.</p>
+        <p><b>1.1. </b>Si el curso se esta llevando o ya se ha llevado, dentro de la 'Carpeta de Recursos' (carpeta de almacenamiento), se deberá incluir una carpeta llamada <em>'_DATOS-DE-CURSO'</em>. En caso el curso no se ha iniciado, no es necesario incluir esta carpeta. Esta carpeta NO es un repositorio GIT.</p>
       </li>
       <li>
-        <p><b>1.2. </b>Esta nueva carpeta contendrá el archivo <em>'nombre-de-curso.html'</em>. En este archivo se mostrará unicamente el encabezado 'DATOS DEL CURSO' (desarrollado más abajo), y el link a la carpeta de práctica (que se creará en el siguiente paso), esto como indicativo de que el curso está siendo llevado o ya se ha terminado.</p>
+        <p><b>1.2. </b>Esta nueva carpeta <em>'_DATOS-DE-CURSO'</em> contendrá el archivo <em>'nombre-de-curso.html'</em>. En este archivo se mostrará unicamente el encabezado 'DATOS DE CURSO' (<a href="#datos-curso">desarrollado más abajo</a>), y el link a la carpeta de práctica (carpeta que se creará en el siguiente paso), esto como indicativo de que el curso está siendo llevado o ya se ha terminado.</p>
       </li>
       <li>
         <p><b>1.3. </b>En la carpeta 'Practicando', dentro de la respectiva carpeta de tema, se creará una carpeta para el curso con el mismo nombre que la carpeta de recursos, ésta será la 'Carpeta de Práctica' y será además un repositorio GIT.</p>
       </li>
       <li>
-        <p><b>1.4. </b>En la 'Carpeta de Práctica' creada en el paso anterior, se incluirán las carpetas <em>'_SEGUIMIENTO-CURSO'</em> y <em>'_RESUMEN-CURSO'</em>.</p>
+        <p><b>1.4. </b>Dentro de la 'Carpeta de Práctica' creada en el paso anterior, se incluirán las carpetas <em>'_SEGUIMIENTO-CURSO'</em> y <em>'_RESUMEN-CURSO'</em>.</p>
       </li>
       <li>
-        <p><b>1.5. </b>Dentro de la carpeta <em>'_SEGUIMIENTO-CURSO'</em> se creará el archivo <em>'nombre-de-curso.html'</em> en el que, a diferencia del archivo creado en el paso 1.2, además del encabezado del curso, se agregará todo el desarrollo del curso, incluyendo links a los videos (a la carpeta de recursos), material de apoyo, archivos, documentación, apuntes, cómo se está desarrollando el curso, últmo video visto, etc.</p>
+        <p><b>1.5. </b>Dentro de la carpeta <em>'_SEGUIMIENTO-CURSO'</em> se creará el archivo <em>'nombre-de-curso.html'</em> en el que, a diferencia del archivo creado en el paso 1.2, además del encabezado del curso, se agregará todo el desarrollo del curso, incluyendo links a los videos (a la carpeta de recursos), material de apoyo, archivos, documentación, apuntes, últmo video visto, etc. y ser irá actualizando conforme se vaya desarrollando el curso.</p>
+      </li>
+      <li>
+        <p><b>1.6. </b>Dentro de la carpeta <em>'_RESUMEN-CURSO'</em> se creará uno o varios documentos que reflejen lo más importante del curso, conceptos, procedimientos, datos, etc. que permitan rápidamente entender lo que el curso enseñe, sin volver a ver todo el contenido del curso, un resumen tal cual.</p>
       </li>
     </ul>
   </li>
-  <li><b>2. Con origen Web: </b> (Youtube, Udemy, otros) se empezará similar que el punto 1.3 creando la 'Carpeta de Práctica' que a la vez será la 'Carpeta de Recursos' siendo también un repositorio GIT. Los pasos en adelante son los mismos. En el archivo 'nombre-de-curso.html' creado en el paso 1.5, los links a los videos deberán dirigir a la web que pertenecen.
+  <li><p><b>2. Con origen Web: </b>son cursos normalmente adquiridos o suscritos legalmente en alguna plataforma (Youtube, Udemy, Doméstika, otros) o alguna fuente formal. En este caso, se empezará desde el punto <b>1.3</b> del anterior método, creando la 'Carpeta de Práctica' que, en este caso, será también la 'Carpeta de Recursos' (ambas serán la misma carpeta) siendo también un repositorio GIT y siguiendo los mismos pasos restantes, excepto que en el archivo 'nombre-de-curso.html' creado en el paso <b>1.5</b>, los links a los videos deberán dirigir a la web que pertenecen. En esta carpeta NO se deben descargar videos o recursos pesados (que ocupen mucho espacio de almacenamiento), en caso se necesite hacer esto, ir al punto <b>3.</b> siguiente.</p> 
   </li>
-  <li><b>3. Con origen en PC y Web a la vez: </b>una situación de este caso se daría, entre otras formas, cuando se tiene un curso web y se desea descargar el contenido a local por cualquier motivo, duplicándose la información de recursos. Se debe seguir los pasos del punto 1 como si fuera un curso local con la excepción de que en el llenado de los datos del curso, dentro del campo 'ORIGEN' se deberá especificar el dato como <em>Web/PC</em>. Hay que tener cuidado con esta situación ya que la versión web del curso podría actualizarse sin aviso alguno dejando obsoleta la versión en PC, cosa que podría no ser favorable.
+  <li><p><b>3. Con origen en PC y Web a la vez: </b>una situación de este caso se daría, entre otras formas, cuando se tiene un curso web y se desea descargar el contenido a local por cualquier motivo, duplicándose la información de recursos. En este caso se debe seguir los pasos desde el punto <b>1.</b> como si fuera un curso local con la excepción de que en el llenado de los datos del curso, dentro del campo 'ORIGEN' se deberá especificar el dato como <em>Web/PC</em>. Hay que tener cuidado con esta situación ya que la versión web del curso podría actualizarse sin aviso alguno dejando obsoleta la versión en PC, cosa que podría no ser favorable.</p>
   </li>
 </ul>
 
 <div class="nota">
     <b>Nota: </b>
-    <p>Es importante que una vez definido un nombre para la carpeta de 'origen' del curso, este nombre ya no cambie nunca, ya que podría perderse el vínculo entre las carpetas de seguimiento y datos del curso.</p>
+    <p>Es importante que la 'Carpeta de Recursos' y la 'Carpeta de Práctica' (en los casos <b>1.</b> y <b>3.</b> anteriores), tengan el mismo nombre, sea un nombre significativo del curso, y éste no cambie en el futuro, ya que podría perderse el vínculo entre estas carpetas haciendo que el curso sea difícil de indentificar.</p>
 </div>
 
-<h2>IDENTIFICADOR DE CURSO (ID)</h2>
+<h3>Configuración de un Identificador de Curso (ID)</h3>
 <p>
   Al empezar un curso será necesario generar un identificador único para el curso, un ID de 16 dígitos que sólo podrá contener los números del 0 al 9 y las letras de la A a la Z diferenciando entre mayúsculas y minúsculas y sin incluir la Ñ.
   Este ID se generará con los códigos ASCII normalizados.
@@ -96,7 +102,7 @@
 
 <details>
   <summary>Para generar el ID de curso</summary>
-  <p>Para generar el ID hay que ir al archivo de excel 'calcularID.xlsx' que se encuentra en la misma carpeta que este archivo y presionar Ctrl+F9. Se generará un ID con los 16 dígitos requeridos. La fórmula está definida para elegir cualquiera de los códigos ASCII de entre las siguientes tablas:</p>
+  <p>Para generar el ID hay que abrir al archivo de excel 'calcularID.xlsx' que se encuentra en la carpeta '_GNRL' y presionar Ctrl+F9. Se generará un ID con los 16 dígitos requeridos. La fórmula está definida para elegir cualquiera de los códigos ASCII de entre las siguientes tablas:</p>
   <table>
     <tbody>
       <tr>
@@ -253,14 +259,14 @@
   </table>  
 </details>
 
-<p>Una vez generado el ID, se crea un archivo con la extensión txt cuyo nombre será el ID, quedando algo como: <em>6lsjkCwPUu69FK4k.txt</em></p> 
+<p>Una vez generado el ID, se crea un archivo cuyo nombre será el ID y la extensión txt, quedando algo como: <em>6lsjkCwPUu69FK4k.txt</em></p> 
 <p>Este archivo debe ser agregado tanto en la 'Carpeta de Recursos' como en la 'Carpeta de Práctica.'</p>
-<p>Este paso es muy importante ya que permitirá buscar los cursos más rápidamente, con mayor precisión y sin ambigüedades, evitando confusiones entre cursos que puedan tener nombres similares.</p>
+<p>Este paso es muy importante ya que permitirá buscar los cursos más rápidamente, con mayor precisión y sin ambigüedades, evitando confusiones entre cursos que puedan tener nombres similares o ser cursos con las mismas temáticas.</p>
 
 
 <div class="encabezado-curso">
   
-  <p class="titulo">
+  <p class="titulo" id="datos-curso">
     DATOS DE CURSO
   </p>
 
@@ -272,13 +278,13 @@
           _
         </p>
       </div>
-    
+<!--     
       <div class="item">
         <h4>DESCRIPCIÓN:</h4>
         <p class="dato">
           _
         </p>
-      </div>
+      </div> -->
     
       <div class="item">
         <h4>WEB OFICIAL:</h4>
@@ -368,6 +374,14 @@
       </div>
     </div>
     <div class="right panel">
+
+      <div class="item">
+        <h4>DESCRIPCIÓN:</h4>
+        <p class="dato">
+          _
+        </p>
+      </div>
+
       <div class="item">
         <h4>IMAGEN(ES) MINIATURAS:</h4>
         <p class="placeholder">para rápida identificación.</p>
@@ -382,6 +396,13 @@
           <img src="./img/07.jpg" alt="">
           <img src="./img/08.jpg" alt="">
         </div>
+      </div>
+
+      <div class="item">
+        <h4>OBSERVACIONES:</h4>
+        <p class="dato">
+          _
+        </p>
       </div>
     </div>
   </div>

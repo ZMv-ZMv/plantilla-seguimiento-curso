@@ -41,6 +41,11 @@ ul {
   --fa-icon: grey;
 }
 
+.tachado {
+  text-decoration: line-through;
+  color: var(--placeholder);
+}
+
 body {
   max-width: 1100px;
   margin: 2rem;
