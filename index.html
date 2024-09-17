@@ -263,6 +263,9 @@
 <p>Este archivo debe ser agregado tanto en la 'Carpeta de Recursos' como en la 'Carpeta de Práctica.'</p>
 <p>Este paso es muy importante ya que permitirá buscar los cursos más rápidamente, con mayor precisión y sin ambigüedades, evitando confusiones entre cursos que puedan tener nombres similares o ser cursos con las mismas temáticas.</p>
 
+<!-- ---------------------------------------------------------------------- -->
+<!-- ----------------------------------- COPIAR A DATOS-DE-CURSO DESDE AQUI -->
+<!-- ---------------------------------------------------------------------- -->
 
 <div class="encabezado-curso">
   
@@ -272,15 +275,16 @@
 
   <div class="item full-ancho">
     <h4>NOMBRE:</h4>
-    <p class="dato">
-      _
+    <p class="dato nombre">
+      _nombre_
     </p>
+    <p class="id">_id_</p>
   </div>
 
   <div class="item full-ancho">
     <h4>DESCRIPCIÓN:</h4>
     <p class="dato caja">
-      _
+      _descripcion_
     </p>
   </div>
 
@@ -292,9 +296,9 @@
         <p class="placeholder">Sin iniciar / En proceso / Terminado</p>
         <p class="dato link">
           <span>
-            En proceso
+            _estado_
           </span>
-          <a href="file://" target="_blank">Ir a archivo de seguimiento </a> <!-- file://C:\...\Practicando\*tema*\*curso*\_SEGUIMIENTO-CURSO\*curso*.html -->
+          <a href="file:///_ruta-archivo-seguimiento_" target="_blank">Ir a archivo de seguimiento </a> <!-- file://C:\...\Practicando\*tema*\*curso*\_SEGUIMIENTO-CURSO\*curso*.html -->
         </p>
       </div>
 
@@ -302,9 +306,9 @@
         <h4>WEB OFICIAL:</h4>
         <p class="dato link">
           <span>
-            _
+            _web_
           </span> 
-          <a href="#" target="_blank"></a>
+          <a href="_web_" target="_blank"></a>
         </p>
       </div>
 
@@ -312,7 +316,7 @@
         <h4>FECHA DE PUBLICACIÓN / ÚLTIMA ACTUALIZACIÓN:</h4>
         <p class="placeholder">mm/yyyy</p>
         <p class="dato">
-          _
+          _f-publicacion_
         </p>
       </div>
 
@@ -320,28 +324,28 @@
         <h4>FECHA DE INICIO DEL CURSO:</h4>
         <p class="placeholder">dd mmm yyyy</p>
         <p class="dato">
-          _
+          _f-inicio_
         </p>
       </div>
     
       <div class="item">
         <h4>AUTOR:</h4>
         <p class="dato">
-          _
+          _autor_
         </p>
       </div>
     
       <div class="item">
         <h4>PROFESOR:</h4>
         <p class="dato">
-          _
+          _profesor_
         </p>
       </div>
       
       <div class="item">
         <h4>IDIOMA:</h4>
         <p class="dato">
-          _
+          _idioma_
         </p>
       </div>
     
@@ -349,14 +353,14 @@
         <h4>ORIGEN:</h4>
         <p class="placeholder">Udemy/Youtube/pc/otro(especificar)</p>
         <p class="dato">
-          _
+          _origen_
         </p>
       </div>
     
       <div class="item">
         <h4>TAGS / TEMAS GENERALES:</h4>
         <p class="dato">
-          _
+          _tags_
         </p>
       </div>
     
@@ -364,7 +368,7 @@
         <h4>REPOSITORIOS GITHUB:</h4>
         <p class="placeholder">https://github.com/*/*.git</p>
         <p class="dato">
-          _
+          _repositorios_
         </p>
       </div>
     
@@ -373,9 +377,9 @@
         <p class="placeholder">Ubicada dentro de la carpeta 'Practicando'</p>
         <p class="dato link">
           <span>
-            _
+            _carpeta-practica_
           </span> 
-          <a href="file://" target="_blank"></a> <!-- file://C:\Users\LV\Desktop\Practicando\web\modern-html-css-beginning -->
+          <a href="file:///_carpeta-practica_" target="_blank"></a> <!-- file://C:\Users\LV\Desktop\Practicando\web\modern-html-css-beginning -->
         </p>
       </div>
 
@@ -384,9 +388,9 @@
         <p class="placeholder">si el curso es WEB, esta carpeta es la misma que la Carpeta de Práctica</p>
         <p class="dato link">
           <span>
-            _
+            _carpeta-recursos_
           </span> 
-          <a href="file://" target="_blank"></a> <!-- file://C:\Users\LV\Downloads\*curso* -->
+          <a href="file:///_carpeta-recursos_" target="_blank"></a> <!-- file://C:\Users\LV\Downloads\*curso* -->
         </p>
       </div>
     
@@ -397,7 +401,7 @@
           -NO- incluye la carpeta '_DATOS-DE-CURSO'. Si el curso es WEB, no es necesario poner este dato
         </p>
         <p class="dato">
-          _
+          _cuantitativo_
         </p>
       </div>
     </div>
@@ -422,7 +426,7 @@
       <div class="item">
         <h4>OBSERVACIONES:</h4>
         <p class="dato caja">
-          _
+          _observaciones_
         </p>
       </div>
     </div>
@@ -434,20 +438,48 @@
       carpeta de recursos\...
     </p>
     <p class="dato caja">
-      _
+      _capitulos_
     </p>
   </div>
   
-  <p class="titulo">
+  <!-- <p class="titulo">
     FIN DE DATOS DE CURSO
-  </p>
+  </p> -->
   
 </div>
 
-ULTIMO VISIONADO:
-C:\Users\LV\Downloads\modern-html-css-beginning\6 - Box Model Positioning\62 - Borders.mp4
+<div class="videos">
+  <p class="titulo">VIDEOS</p>    
+  <div class="capitulo">
+    <p class="txtCapitulo">1 - Introduction</p>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <div class="subcapitulo">
+      <p>\Subcapítulo(s)</p>
+      <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+      <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+      <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+      <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    </div>
+  </div>
+  <div class="capitulo">
+    <p class="txtCapitulo">2 - Primeros pasos</p>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+  </div>
+</div>
+  
+<!-- ---------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------- HASTA AQUI -->
+<!-- ---------------------------------------------------------------------- -->
 
-\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\***\*\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\*** HISTORIAL DE COMMMITS
+<!-- \***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\***\*\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\*** HISTORIAL DE COMMMITS
 
 Para el seguimiento y avance del curso, aquí se va registrando los commits más importantes de acuerdo a las lecciones, por ejemplo el inicio de cada clase (video), un tema importante que resaltar, etc. Los videos o capítulos que no merezcan un commit o que teniendo commits no sean de trascendencia para el curso, no deberían registrarse.
 Lo ideal es que al principio del curso se ponga todas las carpetas y archivos de video, luego con el seguimiento del curso, se va actualizando los commits para cada video si es necesario.
@@ -474,13 +506,7 @@ nnnnnnn = hash del commit
 En esta área irán los enlaces a los videos del curso.
 Si es un curso en PC la ruta será del archivo local, si es en web la dirección de la página web.
 La idea de esta área es que en cada video revisado se pueda escribir comentarios o apuntar lo que sea resaltante del video.
-Además, de ser necesario, se pueden incluir tags de los temas tocados en cada video para rápida indentificación de los temas vistos.
-
-<video class="videoClase" type="video/mp4" controls src="RUTA DEL VIDEO 1.mp4"></video>
-<video class="videoClase" type="video/mp4" controls src="RUTA DEL VIDEO 2.mp4"></video>
-<video class="videoClase" type="video/mp4" controls src="RUTA DEL VIDEO 3.mp4"></video>
-
-  
+Además, de ser necesario, se pueden incluir tags de los temas tocados en cada video para rápida indentificación de los temas vistos. -->
 
 </body>
 </html>
