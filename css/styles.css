@@ -285,6 +285,7 @@ table {
   font-size: 1rem;
   text-align: center;
   .capitulo {
+    font-size: 0.8rem;
     margin: 0.5rem auto;
     padding: 0.5rem 1rem;
     background-color: var(--item-background);
@@ -296,9 +297,9 @@ table {
       margin-bottom: 0.45rem;
     }
     .txtCapitulo{
+      font-weight: 700;
       &::before {
         font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
         content: 'Cap. ';
       }
     }
