@@ -161,7 +161,7 @@ table {
   &::after {
     content: '';
     flex: 1;
-    height: 1px;
+    height: 2px;
     background-color: #000;
   }
 }
@@ -169,7 +169,8 @@ table {
   display: flex;
   gap: 0.5rem;
   .panel {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
+    flex: 1;
     background-color: var(--item-background);
     border-radius: 5px;
     padding-left: 0.5rem;
