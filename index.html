@@ -51,41 +51,92 @@
   </ul>
 
 <p>Dentro de la carpeta 'Practicando' se ubicarán carpetas por temas a practicar y dentro de estos temas los cursos propiamente dichos.</p>
-<p>-TODOS- los cursos llevados deben tener un registro en estas carpetas dentro de su respectivo tema, sean cursos con origen en PC, Youtube, Udemy o le que sea, deben registrarse en esta carpeta para que quede como fuente de consulta a futuro y como verificación si un curso ya se llevo y no estar repitiéndolo.</p>
-<p>Esta ubicación para el seguimiento y desarrollo de los cursos es la 'Carpeta de Práctica' del curso, NO es el almacenamiento de videos o recursos pesados ya que estos normalmente exigen mucho almacenamiento y esta ubicación no es la adecuada para ello, en su lugar existirá la 'Carpeta de Recursos'. Ambas carpetas, de práctica y de recursos, son explicadas a mayor detalle más abajo.</p>
+<p>-TODOS- los cursos llevados deben tener un registro en esta carpeta dentro de su respectivo tema, sean cursos con origen en PC, Youtube, Udemy o le que sea, deben registrarse en esta carpeta para que quede como fuente de consulta a futuro y como verificación si un curso ya se llevo y no estar repitiéndolo.</p>
 
 <h2>DESARROLLO DE UN CURSO</h2>
 
+<!-- <h3>Organización de carpetas</h3> -->
+<p>Existirán 2 carpetas en el desarrollo de un curso:</p><br>
+
+<h3 class="file">Carpeta de Recurso</h3>
+<p>Guardará los videos, archivos pesados, etc., que conformarán el curso. Será el almacenamiento de los cursos de fuente PC (que se han descargado o se tienen en local). La ubicación de esta carpeta dependará de la carpeta donde se almacenan los tutoriales, en una PC, en un disco extraible o cualquier otro de manera local. El nombre de la carpeta será el nombre del curso.</p>
+<p>Dentro de esta carpeta se incluirá además un archivo TXT que tendrá como nombre el ID del curso, un archivo HTML con el nombre del curso que guardará sus datos e información.</p>
+<p>También se incluirá una carpeta llamada "<b>_RECURSO_</b>" en la cual se guardará las dependencias del archivo HTML anterior.</p>
+<p>La organización y contenido mínimo de esta carpeta será:</p>
+<ul class="carpetas">
+  <li>Nombre de curso
+    <ul>
+      <li>Carpetas de recursos 1: videos, archivos, etc.</li>
+      <li>Carpetas de recursos 2: videos, archivos, etc.</li>
+      <li>Carpetas de recursos n: videos, archivos, etc.</li>
+      <li>_RECURSO_
+        <ul>
+          <li>css</li>
+          <li>styles</li>
+          <li>img</li>
+        </ul>
+      </li>
+      <li class="file">nombre_curso.html</li>
+      <li class="file">ID_curso.txt</li>
+    </ul>
+  </li>
+</ul>
+<p>En el caso de cursos de origen Web como Youtube o Udemy, esta carpeta <b>no</b> será necesaria.</p>
+<br>
+
+<h3>Carpeta de Práctica</h3>
+<p>Esta es la ubicación para la práctica el seguimiento y desarrollo de los cursos, <b>no</b> es el almacenamiento de videos o recursos pesados ya que estos normalmente exigen mucho almacenamiento y esta ubicación no es la adecuada, para ello existirá la Carpeta de Recurso anteriormente explicada.</p>
+<p>Esta carpeta de práctica estará ubicada dentro de la carpeta "Pracitcando" y tendrá el nombre del curso. <b>Siempre</b> será necesaria para todo curso que se vaya a iniciar, sea de origen WEB o PC.</p>
+<p>Dentro de esta carpeta se incluirá además un archivo TXT que tendrá como nombre el ID del curso, un archivo HTML con el nombre del curso que guardará sus datos, información, resúmenes, notas, y todo lo concerniente al aprendizaje. Este archivo HTML podría tener los vinculos a los archivos de recursos (a los videos por ejemplo) almacenados en la Carpeta de Recurso.</p>
+<p>También se incluirá una carpeta <b>_CURSO_</b> que guardará las dependencias del archivo HTML anterior.</p>
+<p>La organización y contenido mínimo de esta carpeta será:</p>
+<ul class="carpetas">
+  <li>Nombre de curso
+    <ul>
+      <li>Desarrollo tema 1</li>
+      <li>Desarrollo tema 2</li>
+      <li>Desarrollo tema n</li>
+      <li>_CURSO_
+        <ul>
+          <li>css</li>
+          <li>styles</li>
+          <li>img</li>
+        </ul>
+      </li>
+      <li class="file">nombre_curso.html</li>
+      <li class="file">ID_curso.txt</li>
+    </ul>
+  </li>
+</ul>
+
+
 <h3>Configuración de la carpeta de práctica y de la carpeta de recursos</h3>
 
-<p>Cuando se empiece a desarrollar un curso y teniendo en cuenta su origen, se deberá configurar la carpeta de práctica y la carpeta de recursos. Este origen se define si es curso en la web, es decir, Youtube o Udemy u otro, o si es un curso que se tiene almacenado de formal local. Dependiendo de este origen se procederá a configurar las carpetas respectivas de la siguiente manera:</p>
+<p>Cuando se empiece a desarrollar un curso y teniendo en cuenta su origen, se deberá configurar la carpeta de práctica y la carpeta de recurso. El origen se define por si es un curso en la web, es decir, Youtube o Udemy u otro, o si es un curso que se tiene almacenado de formal local. Dependiendo de este origen se procederá a configurar las carpetas respectivas de la siguiente manera:</p>
 
 <ul class="proceso">
-  <li><p><b>1. Con origen en PC: </b>son cursos que han sido descargados <span class="tachado">de manera pirata</span> o que los videos se tienen almacenados de forma local, en la PC o en almacenamiento externo de algún tipo. Este almacenamiento será la 'Carpeta de Recursos' para este tipo de cursos y normalmente tendrá el mismo o similar nombre que el curso.</p>
+  <li><p><b>1. Curso con origen en PC: </b>son cursos que han sido descargados <span class="tachado">de manera pirata</span> o que los videos se tienen almacenados de forma local, en la PC o en almacenamiento externo de algún tipo. Este almacenamiento será la "Carpeta de Recurso" para este tipo de cursos y normalmente tendrá el mismo o similar nombre que el curso.</p>
     <ul>
       <li>
-        <p><b>1.1. </b>Si el curso se esta llevando o ya se ha llevado, dentro de la 'Carpeta de Recursos' (carpeta de almacenamiento), se deberá incluir una carpeta llamada <em>'_DATOS-DE-CURSO'</em>. En caso el curso no se ha iniciado, no es necesario incluir esta carpeta. Esta carpeta NO es un repositorio GIT.</p>
+        <p><b>1.1. </b>Cuando el curso inicie, dentro de la "Carpeta de Recurso" (carpeta de almacenamiento), se deberán incluir los archivos <em>ID_curso.txt</em> y <em>nombre_curso.html</em>. En este último archivo se mostrará unicamente el encabezado 'DATOS DE CURSO' (<a href="#datos-curso">desarrollado más abajo</a>), y el link a la carpeta de práctica (carpeta que se creará más adelante), esto como indicativo de que el curso está siendo llevado o ya se ha terminado.
       </li>
       <li>
-        <p><b>1.2. </b>Esta nueva carpeta <em>'_DATOS-DE-CURSO'</em> contendrá el archivo <em>'nombre-de-curso.html'</em>. En este archivo se mostrará unicamente el encabezado 'DATOS DE CURSO' (<a href="#datos-curso">desarrollado más abajo</a>), y el link a la carpeta de práctica (carpeta que se creará en el siguiente paso), esto como indicativo de que el curso está siendo llevado o ya se ha terminado.</p>
+        <p><b>1.2. </b>Dentro de la "Carpeta de Recurso" (carpeta de almacenamiento), se deberá incluir la carpeta <em>_RECURSO_</em> la cual contendrá todas las dependencias del archivo <em>nombre_curso.html</em> para su correcto funcionamiento. Esta carpeta no es un repositorio GIT.</p>
       </li>
       <li>
-        <p><b>1.3. </b>En la carpeta 'Practicando', dentro de la respectiva carpeta de tema, se creará una carpeta para el curso con el mismo nombre que la carpeta de recursos, ésta será la 'Carpeta de Práctica' y será además un repositorio GIT.</p>
+        <p><b>1.3. </b>En la carpeta "Practicando", dentro de la respectiva carpeta del tema, se creará una carpeta para el curso con el mismo nombre que la carpeta de recurso, ésta será la 'Carpeta de Práctica' y será además un repositorio GIT.</p>
       </li>
       <li>
-        <p><b>1.4. </b>Dentro de la 'Carpeta de Práctica' creada en el paso anterior, se incluirán las carpetas <em>'_SEGUIMIENTO-CURSO'</em> y <em>'_RESUMEN-CURSO'</em>.</p>
+        <p><b>1.4. </b>Dentro de la 'Carpeta de Práctica' creada en el paso anterior, se deberán incluir los archivos <em>ID_curso.txt</em> y <em>nombre_curso.html</em> además de la carpeta <em>_CURSO_</em> la cual contendrá todas las dependencias del archivo <em>nombre_curso.html</em> para su correcto funcionamiento.</p>
       </li>
       <li>
-        <p><b>1.5. </b>Dentro de la carpeta <em>'_SEGUIMIENTO-CURSO'</em> se creará el archivo <em>'nombre-de-curso.html'</em> en el que, a diferencia del archivo creado en el paso 1.2, además del encabezado del curso, se agregará todo el desarrollo del curso, incluyendo links a los videos (a la carpeta de recursos), material de apoyo, archivos, documentación, apuntes, últmo video visto, etc. y ser irá actualizando conforme se vaya desarrollando el curso.</p>
-      </li>
-      <li>
-        <p><b>1.6. </b>Dentro de la carpeta <em>'_RESUMEN-CURSO'</em> se creará uno o varios documentos que reflejen lo más importante del curso, conceptos, procedimientos, datos, etc. que permitan rápidamente entender lo que el curso enseñe, sin volver a ver todo el contenido del curso, un resumen tal cual.</p>
+        <p><b>1.5. </b>Dentro del archivo <em>nombre_curso.html</em>, a diferencia del mismo archivo creado en el paso 1.1, además del encabezado del curso, se agregará todo el desarrollo del curso, incluyendo links a los videos (a la carpeta de recursos), material de apoyo, archivos, documentación, apuntes, últmo video visto, etc. y ser irá actualizando conforme se vaya desarrollando el curso. Se pueden ir creando uno o varios sub documentos que reflejen otros temas, lo más importante del curso, conceptos, procedimientos, datos, etc. que permitan rápidamente entender lo que el curso enseñe, sin volver a ver todo el contenido del curso, un resumen tal cual.</p>
       </li>
     </ul>
   </li>
-  <li><p><b>2. Con origen Web: </b>son cursos normalmente adquiridos o suscritos legalmente en alguna plataforma (Youtube, Udemy, Doméstika, otros) o alguna fuente formal. En este caso, se empezará desde el punto <b>1.3</b> del anterior método, creando la 'Carpeta de Práctica' que, en este caso, será también la 'Carpeta de Recursos' (ambas serán la misma carpeta) siendo también un repositorio GIT y siguiendo los mismos pasos restantes, excepto que en el archivo 'nombre-de-curso.html' creado en el paso <b>1.5</b>, los links a los videos deberán dirigir a la web que pertenecen. En esta carpeta NO se deben descargar videos o recursos pesados (que ocupen mucho espacio de almacenamiento), en caso se necesite hacer esto, ir al punto <b>3.</b> siguiente.</p> 
+  <li><p><b>2. Con origen Web: </b>son cursos normalmente adquiridos o suscritos legalmente en alguna plataforma (Youtube, Udemy, Doméstika, otros) o alguna fuente formal. En este caso, se empezará desde el punto <b>1.3</b> del anterior método, creando la 'Carpeta de Práctica' que, en este caso, será también la 'Carpeta de Recursos' (ambas serán la misma carpeta) siendo también un repositorio GIT y siguiendo los mismos pasos restantes, excepto que en el archivo <em>nombre_curso.html</em> creado en el paso <b>1.5</b>, los links a los videos deberán dirigir a la web que pertenecen. En esta carpeta <b>no</b> se deben descargar videos o recursos pesados (que ocupen mucho espacio de almacenamiento), en caso se necesite hacer esto, ir al punto <b>3.</b> siguiente.</p> 
   </li>
-  <li><p><b>3. Con origen en PC y Web a la vez: </b>una situación de este caso se daría, entre otras formas, cuando se tiene un curso web y se desea descargar el contenido a local por cualquier motivo, duplicándose la información de recursos. En este caso se debe seguir los pasos desde el punto <b>1.</b> como si fuera un curso local con la excepción de que en el llenado de los datos del curso, dentro del campo 'ORIGEN' se deberá especificar el dato como <em>Web/PC</em>. Hay que tener cuidado con esta situación ya que la versión web del curso podría actualizarse sin aviso alguno dejando obsoleta la versión en PC, cosa que podría no ser favorable.</p>
+  <li><p><b>3. Con origen en PC y Web a la vez: </b>una situación de este caso se daría, entre otras formas, cuando se tiene un curso web y se desea descargar el contenido a local por cualquier motivo, duplicándose la información de recursos, es decir, se tiene recursos en la web y en la pc. En este caso se debe seguir los pasos desde el punto <b>1.</b> como si fuera un curso local con la excepción de que en el llenado de los datos del curso, dentro del campo 'ORIGEN' se deberá especificar el dato como <em>Web/PC</em>. Hay que tener cuidado con esta situación ya que la versión web del curso podría actualizarse sin aviso alguno dejando obsoleta la versión en PC, cosa que podría no ser favorable.</p>
   </li>
 </ul>
 
@@ -102,7 +153,7 @@
 
 <details>
   <summary>Para generar el ID de curso</summary>
-  <p>Para generar el ID hay que abrir al archivo de excel 'calcularID.xlsx' que se encuentra en la carpeta '_GNRL' y presionar Ctrl+F9. Se generará un ID con los 16 dígitos requeridos. La fórmula está definida para elegir cualquiera de los códigos ASCII de entre las siguientes tablas:</p>
+  <p>Para generar el ID hay que abrir al archivo de excel 'calcularID.xlsx' que se encuentra en la carpeta '_GNRL' y presionar F9. Se generará un ID con los 16 dígitos requeridos. La fórmula está definida para elegir cualquiera de los códigos ASCII de entre las siguientes tablas:</p>
   <table>
     <tbody>
       <tr>
@@ -263,12 +314,29 @@
 <p>Este archivo debe ser agregado tanto en la 'Carpeta de Recursos' como en la 'Carpeta de Práctica.'</p>
 <p>Este paso es muy importante ya que permitirá buscar los cursos más rápidamente, con mayor precisión y sin ambigüedades, evitando confusiones entre cursos que puedan tener nombres similares o ser cursos con las mismas temáticas.</p>
 
+<h2>VERSIÓN DE PLANTILLA</h2>
+
+<h3>Versión: 0.1</h3>
+<p>Versión actual.</p>
+<p>- Creación de la numeración de versiones. A partir de ahora el número de versión deberá ir en el encabezado de los datos del curso. Si en adelante se desea modificar el número de versión se deberá hacer en el archivo styles.css dentro de el content de .version</p>
+<p>- Para el desarrollo del curso ahora se crea sólo 2 carpetas una _RECURSO_ y otra dentro de la carpeta practicando _CURSO_.</p>
+<br>
+
+<h3>Versión: 0.00</h3>
+<p>Versiónn inicial.</p> 
+<p>- Para el desarrollo del curso, se crea tres carpetas para el curso una de recurso para el almacenamiento y dos dentro de la carpeta Practicando. Estas dos carpetas son _SEGUIMIENTO-CURSO y _DATOS-DE-CURSO.</p>
+<p>- Se crea la plantilla de datos del curso</p>
+<p>- Se crea el archivo excel para la obtención del ID de curso</p>
+
 <!-- ---------------------------------------------------------------------- -->
 <!-- ----------------------------------- COPIAR A DATOS-DE-CURSO DESDE AQUI -->
 <!-- ---------------------------------------------------------------------- -->
 
 <div class="encabezado-curso">
-  
+  <div class="version">
+    Plantilla V <!-- Para modificar la versión ir al archivo styles.css y modificarla en el content de .version -->
+  </div>
+
   <p class="titulo" id="datos-curso">
     DATOS DE CURSO
   </p>

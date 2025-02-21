@@ -1,0 +1,4 @@
+carpetas dentro de practicando/…/curso:
+.git > repositorios git
+_INTERNO > el HTML con los datos del curso
+RESTO DE CARPETAS > todas las carpetas de acuerdo al desarrollo del curso. las carpetas o archivos que pesen mucho o que no necesiten seguimiento van al gitignore
