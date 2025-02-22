@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./_htmlDep_/css/styles.css">
+
+  <title>PRACTICANDO - PLANTILLA DE SEGUIMIENTO DE CURSOS</title>
+</head>
+<body>
+  
+<h1>Procedimiento y Plantilla para el desarrollo de cusos</h1>
+<div class="encabezado-curso">
+  <div class="version">
+    Plantilla V <!-- Para modificar la versión ir al archivo styles.css y modificarla en el content de .version -->
+  </div>
+
+  <h2>CONFIGURACIÓN Y PLANTILLA GENERAL DE CURSOS</h2>
+  <p>Para la gestión general de los cursos, se debe crear la carpeta 'Practicando' la cual debe estar ubicada en el escritorio o en la raíz de alguna unidad de almacenamientode de una pc local. A fututo cuando las velocidades de almacenamiento y transferencia de red lo permitan se podría almacenar en una unidad de red para que las difetentes computadoras conectadas a la red puedan compartir esta carpeta.</p>
+  <p>Dentro de esta carpeta se crearán como carpetas internas los temas generales que se requieran aprender y dentro de estos temas (carpetas), se irán agregando los cursos específicos.</p>
+  <p>Dentro de la carpeta 'Practicando' se creará también la carpeta '_GNRL' que contendrá toda la información y archivos para la configuración general de los cursos como son este mismo archivo (nombre_curso.html) y sus dependencias dentro de la carpeta _htmlDep_ (css, js, img, etc.), el archivo 'calcularID.xlsx', entre otros que definirán cómo se deberá desarrollar los cursos. Esta carpeta '_GNRL' tabién será un repositorio GIT.</p>
+  <p>La estructura de las carpetas dentro de 'Practicando' y cómo se están llevando los cursos es como en el siguiente gráfico:</p>
+
+  <ul class="carpetas">
+    <li>...
+      <ul>
+        <li>Pracitcando
+          <ul>
+            <li>_GNRL <span>(donde se guardará este documento para el formateo general del seguimiento de cursos)</span>
+              <ul>
+                <li>.git</li>
+                <li>_htmlDep_
+                  <ul>
+                    <li>css</li>
+                    <li>img</li>
+                    <li>js</li>
+                  </ul>
+                </li>
+                <li class="file">calcularID.xlsx</li>
+                <li class="file">nombre_curso.html</li>
+              </ul>
+            </li>
+            <li>AutoCAD</li>
+            <li>Cpp</li>
+            <li>Excel</li>
+            <li>Python</li>
+            <li>WEB</li>
+            <li>... otros temas <span>(estos temas no son los cursos en sí, cada tema - carpeta tiene sus respectivos cursos dentro)</span></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </li>
+  </ul>
+
+  <p>Dentro de la carpeta 'Practicando' se ubicarán carpetas por temas a practicar y dentro de estos temas los cursos propiamente dichos.</p>
+  <p>-TODOS- los cursos llevados deben tener una carpeta de práctica dentro de esta carpeta dentro a su vez de su respectivo tema, sean cursos con origen en PC, Youtube, Udemy o le que sea. Para esto se debe copiar el archivo nombre_curso.html y la carpeta _htmlDep_ dentro de la carpeta de práctica, el cual será modificado con los datos del curso.</p> 
+  
+  <!-- <h2>DESARROLLO DE UN CURSO</h2> -->
+
+  <p>Existirán 2 carpetas en el desarrollo de un curso:</p><br>
+
+  <h3 class="file">Carpeta de Recurso</h3>
+  <p>Guardará los videos, archivos pesados, etc., que conformarán el curso. Será el almacenamiento de los cursos de fuente PC (que se han descargado o se tienen en local). La ubicación de esta carpeta dependará de la carpeta donde se almacenan los tutoriales, en una PC, en un disco extraible o cualquier otro de manera local. El nombre de la carpeta será el nombre del curso.</p>
+  <p>Dentro de esta carpeta se incluirá además un archivo TXT que tendrá como nombre el ID del curso, un archivo HTML con el nombre del curso que guardará sus datos e información.</p>
+  <p>También se incluirá una carpeta llamada "_htmlDep_" en la cual se guardará las dependencias del archivo HTML anterior.</p>
+  <br>
+  <p>La organización y contenido mínimo de la carpeta de recurso será:</p>
+  <ul class="carpetas">
+    <li>Nombre de curso
+      <ul>
+        <li>Carpetas de recursos 1: videos, archivos, etc.</li>
+        <li>Carpetas de recursos 2: videos, archivos, etc.</li>
+        <li>Carpetas de recursos n: videos, archivos, etc.</li>
+        <li>_htmlDep_
+          <ul>
+            <li>css</li>
+            <li>styles</li>
+            <li>img</li>
+          </ul>
+        </li>
+        <li class="file">nombre_curso.html</li>
+        <li class="file">ID_curso.txt</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Carpeta de Práctica</h3>
+  <p>Esta es la ubicación para la práctica el seguimiento y desarrollo de los cursos, <b>no</b> es el almacenamiento de videos o recursos pesados ya que estos normalmente exigen mucho almacenamiento y esta ubicación no es la adecuada, para ello existirá la Carpeta de Recurso anteriormente explicada.</p>
+  <p>Esta carpeta de práctica estará ubicada dentro de la carpeta "Pracitcando" y tendrá el nombre del curso. <b>Siempre</b> será necesaria para todo curso que se vaya a iniciar, sea de origen WEB o PC.</p>
+  <p>Dentro de esta carpeta se incluirá además un archivo TXT que tendrá como nombre el ID del curso, un archivo HTML con el nombre del curso que guardará sus datos, información, resúmenes, notas, y todo lo concerniente al aprendizaje. Este archivo HTML podría tener los vinculos a los archivos de recursos (a los videos por ejemplo) almacenados en la Carpeta de Recurso.</p>
+  <p>Al igual que en la carpeta de recurso, también se incluirá la carpeta "_htmlDep_" en la cual se guardará las dependencias del archivo HTML anterior.</p>
+  <p>En el caso de cursos de origen Web como Youtube o Udemy, esta carpeta <b>no</b> será necesaria.</p>
+
+  <br>
+  <p>La organización y contenido mínimo de la carpeta de práctica será:</p>
+  <ul class="carpetas">
+    <li>Nombre de curso
+      <ul>
+        <li>Desarrollo tema 1</li>
+        <li>Desarrollo tema 2</li>
+        <li>Desarrollo tema n</li>
+        <li>_htmlDep_
+          <ul>
+            <li>css</li>
+            <li>styles</li>
+            <li>img</li>
+          </ul>
+        </li>
+        <li class="file">nombre_curso.html</li>
+        <li class="file">ID_curso.txt</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>INICIO DE UN CURSO</h2>
+
+  <h3>Configuración de un Identificador de Curso (ID)</h3>
+  
+  <p>Al empezar un curso será necesario generar un identificador único para el curso, un ID de 16 dígitos que sólo podrá contener los números del 0 al 9 y las letras de la A a la Z diferenciando entre mayúsculas y minúsculas y sin incluir la Ñ. Este ID se generará con los códigos ASCII normalizados.
+  </p>
+
+  <details>
+    <summary>Para generar el ID de curso</summary>
+    <p>Para generar el ID hay que abrir al archivo de excel 'calcularID.xlsx' que se encuentra en la carpeta '_GNRL' y presionar F9. Se generará un ID con los 16 dígitos requeridos. La fórmula está definida para elegir cualquiera de los códigos ASCII de entre las siguientes tablas:</p>
+    <table>
+      <tbody>
+        <tr>
+          <td class="col1">Números</td>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td class="col1">ASCII</td>
+          <td>48</td>
+          <td>49</td>
+          <td>50</td>
+          <td>51</td>
+          <td>52</td>
+          <td>53</td>
+          <td>54</td>
+          <td>55</td>
+          <td>56</td>
+          <td>57</td>
+        </tr>
+      </tbody>
+    </table>  
+    <table>
+      <tbody>
+        <tr>
+          <td class="col1">Mayúsculas</td>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+          <td>J</td>
+          <td>K</td>
+          <td>L</td>
+          <td>M</td>
+          <td>N</td>
+          <td>O</td>
+          <td>P</td>
+          <td>Q</td>
+          <td>R</td>
+          <td>S</td>
+          <td>T</td>
+          <td>U</td>
+          <td>V</td>
+          <td>W</td>
+          <td>X</td>
+          <td>Y</td>
+          <td>Z</td>
+        </tr>
+        <tr>
+          <td class="col1">ASCII</td>
+          <td>65</td>
+          <td>66</td>
+          <td>67</td>
+          <td>68</td>
+          <td>69</td>
+          <td>70</td>
+          <td>71</td>
+          <td>72</td>
+          <td>73</td>
+          <td>74</td>
+          <td>75</td>
+          <td>76</td>
+          <td>77</td>
+          <td>78</td>
+          <td>79</td>
+          <td>80</td>
+          <td>81</td>
+          <td>82</td>
+          <td>83</td>
+          <td>84</td>
+          <td>85</td>
+          <td>86</td>
+          <td>87</td>
+          <td>88</td>
+          <td>89</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+    </table>  
+    <table>
+      <tbody>
+        <tr>
+          <td class="col1">Minúsculas</td>
+          <td>a</td>
+          <td>b</td>
+          <td>c</td>
+          <td>d</td>
+          <td>e</td>
+          <td>f</td>
+          <td>g</td>
+          <td>h</td>
+          <td>i</td>
+          <td>j</td>
+          <td>k</td>
+          <td>l</td>
+          <td>m</td>
+          <td>n</td>
+          <td>o</td>
+          <td>p</td>
+          <td>q</td>
+          <td>r</td>
+          <td>s</td>
+          <td>t</td>
+          <td>u</td>
+          <td>v</td>
+          <td>w</td>
+          <td>x</td>
+          <td>y</td>
+          <td>z</td>
+        </tr>
+        <tr>
+          <td class="col1">ASCII</td>
+          <td>97</td>
+          <td>98</td>
+          <td>99</td>
+          <td>100</td>
+          <td>101</td>
+          <td>102</td>
+          <td>103</td>
+          <td>104</td>
+          <td>105</td>
+          <td>106</td>
+          <td>107</td>
+          <td>108</td>
+          <td>109</td>
+          <td>110</td>
+          <td>111</td>
+          <td>112</td>
+          <td>113</td>
+          <td>114</td>
+          <td>115</td>
+          <td>116</td>
+          <td>117</td>
+          <td>118</td>
+          <td>119</td>
+          <td>120</td>
+          <td>121</td>
+          <td>122</td>
+        </tr>
+      </tbody>
+    </table>  
+  </details>
+
+  <p>Una vez generado el ID, se crea un archivo cuyo nombre será el ID y la extensión txt, quedando algo como: <em>6lsjkCwPUu69FK4k.txt</em></p> 
+  <p>Este archivo debe ser agregado tanto en la 'Carpeta de Recurso' como en la 'Carpeta de Práctica.'</p>
+  <p>Este paso es muy importante ya que permitirá buscar los cursos más rápidamente, con mayor precisión y sin ambigüedades, evitando confusiones entre cursos que puedan tener nombres similares o ser cursos con las mismas temáticas.</p>
+  <br>
+
+  <h3>Configuración de las Carpeta de práctica y de recurso</h3>
+  <p>Una vez generado un ID y teniendo en cuenta su origen, se deberá configurar la carpeta de práctica y la carpeta de recurso. El origen se define por si es un curso en la web, es decir, Youtube o Udemy u otro, o si es un curso que se tiene almacenado de formal local. Dependiendo de este origen se procederá a configurar las carpetas respectivas de la siguiente manera:</p>
+
+  <ul class="proceso">
+    <li><p><b>1. Curso con origen en PC: </b>son cursos que han sido descargados <span class="tachado">de manera pirata</span> o que los videos se tienen almacenados de forma local, en la PC o en almacenamiento externo de algún tipo. Este almacenamiento será la "Carpeta de Recurso" para este tipo de cursos y normalmente tendrá el mismo o similar nombre que el curso.</p>
+      <ul>
+        <li>
+          <p><b>1.1. </b>Cuando el curso inicie, dentro de la "Carpeta de Recurso" (carpeta de almacenamiento), se deberán incluir los archivos <em>ID_curso.txt</em> y <em>nombre_curso.html</em>. En este último archivo se mostrará unicamente el encabezado 'DATOS DE CURSO' (<a href="#datos-curso">desarrollado más abajo</a>), y el link a la carpeta de práctica (carpeta que se creará más adelante), esto como indicativo de que el curso está siendo llevado o ya se ha terminado.
+        </li>
+        <li>
+          <p><b>1.2. </b>Dentro de la "Carpeta de Recurso" (carpeta de almacenamiento), se deberá incluir la carpeta <em>_RECURSO_</em> la cual contendrá todas las dependencias del archivo <em>nombre_curso.html</em> para su correcto funcionamiento. Esta carpeta no es un repositorio GIT.</p>
+        </li>
+        <li>
+          <p><b>1.3. </b>En la carpeta "Practicando", dentro de la respectiva carpeta del tema, se creará una carpeta para el curso con el mismo nombre que la carpeta de recurso, ésta será la 'Carpeta de Práctica' y será además un repositorio GIT.</p>
+        </li>
+        <li>
+          <p><b>1.4. </b>Dentro de la 'Carpeta de Práctica' creada en el paso anterior, se deberán incluir los archivos <em>ID_curso.txt</em> y <em>nombre_curso.html</em> además de la carpeta <em>_CURSO_</em> la cual contendrá todas las dependencias del archivo <em>nombre_curso.html</em> para su correcto funcionamiento.</p>
+        </li>
+        <li>
+          <p><b>1.5. </b>Dentro del archivo <em>nombre_curso.html</em>, a diferencia del mismo archivo creado en el paso 1.1, además del encabezado del curso, se agregará todo el desarrollo del curso, incluyendo links a los videos (a la carpeta de recursos), material de apoyo, archivos, documentación, apuntes, últmo video visto, etc. y ser irá actualizando conforme se vaya desarrollando el curso. Se pueden ir creando uno o varios sub documentos que reflejen otros temas, lo más importante del curso, conceptos, procedimientos, datos, etc. que permitan rápidamente entender lo que el curso enseñe, sin volver a ver todo el contenido del curso, un resumen tal cual.</p>
+        </li>
+      </ul>
+    </li>
+    <li><p><b>2. Con origen Web: </b>son cursos normalmente adquiridos o suscritos legalmente en alguna plataforma (Youtube, Udemy, Doméstika, otros) o alguna fuente formal. En este caso, se empezará desde el punto <b>1.3</b> del anterior método, creando la 'Carpeta de Práctica' que, en este caso, será también la 'Carpeta de Recursos' (ambas serán la misma carpeta) siendo también un repositorio GIT y siguiendo los mismos pasos restantes, excepto que en el archivo <em>nombre_curso.html</em> creado en el paso <b>1.5</b>, los links a los videos deberán dirigir a la web que pertenecen. En esta carpeta <b>no</b> se deben descargar videos o recursos pesados (que ocupen mucho espacio de almacenamiento), en caso se necesite hacer esto, ir al punto <b>3.</b> siguiente.</p> 
+    </li>
+    <li><p><b>3. Con origen en PC y Web a la vez: </b>una situación de este caso se daría, entre otras formas, cuando se tiene un curso web y se desea descargar el contenido a local por cualquier motivo, duplicándose la información de recursos, es decir, se tiene recursos en la web y en la pc. En este caso se debe seguir los pasos desde el punto <b>1.</b> como si fuera un curso local con la excepción de que en el llenado de los datos del curso, dentro del campo 'ORIGEN' se deberá especificar el dato como <em>Web/PC</em>. Hay que tener cuidado con esta situación ya que la versión web del curso podría actualizarse sin aviso alguno dejando obsoleta la versión en PC, cosa que podría no ser favorable.</p>
+    </li>
+  </ul>
+
+  <div class="nota">
+    <b>Nota: </b>
+    <p>Es importante que la 'Carpeta de Recursos' y la 'Carpeta de Práctica' (en los casos <b>1.</b> y <b>3.</b> anteriores), tengan el mismo nombre, sea un nombre significativo del curso, y éste no cambie en el futuro, ya que podría perderse el vínculo entre estas carpetas haciendo que el curso sea difícil de indentificar.</p>
+  </div>
+
+  <h2>VERSIÓN DE PLANTILLA</h2>
+
+  <p>Cada versión nueva de plantilla debe ser actualizada en</p>
+
+  <h3>Versión: 0.15</h3>
+  <p>- Se elimina las carpetas _RECURSO_ y _CURSO_ de la carpeta de recurso y de práctica respectivamente. Estas carpetas eliminadas serán reemmplazadas por la carpeta _htmlDep_ para mantener el order en el desarrollo del curso.</p>
+  <br>
+
+  <h3>Versión: 0.1</h3>
+  <p>Versión actual.</p>
+  <p>- Creación de la numeración de versiones. A partir de ahora el número de versión deberá ir en el encabezado de los datos del curso. Si en adelante se desea modificar el número de versión se deberá hacer en el archivo styles.css dentro de el content de .version</p>
+  <p>- Para el desarrollo del curso ahora se crea sólo 2 carpetas una _RECURSO_ y otra dentro de la carpeta practicando _CURSO_.</p>
+  <br>
+
+  <h3>Versión: 0.00</h3>
+  <p>Versiónn inicial.</p> 
+  <p>- Para el desarrollo del curso, se crea tres carpetas para el curso una de recurso para el almacenamiento y dos dentro de la carpeta Practicando. Estas dos carpetas son _SEGUIMIENTO-CURSO y _DATOS-DE-CURSO.</p>
+  <p>- Se crea la plantilla de datos del curso</p>
+  <p>- Se crea el archivo excel para la obtención del ID de curso</p>
+
+</div>  
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- ----------------------------------- COPIAR A DATOS-DE-CURSO DESDE AQUI -->
+<!-- ---------------------------------------------------------------------- -->
+
+<div class="encabezado-curso">
+  <div class="version">
+    Plantilla V <!-- Para modificar la versión ir al archivo styles.css y modificarla en el content de .version -->
+  </div>
+
+  <p class="titulo" id="datos-curso">
+    DATOS DE CURSO
+  </p>
+
+  <div class="item full-ancho">
+    <h4>NOMBRE:</h4>
+    <p class="dato nombre">
+      _nombre_
+    </p>
+    <p class="id">_id_</p>
+  </div>
+
+  <div class="item full-ancho">
+    <h4>DESCRIPCIÓN:</h4>
+    <p class="dato caja">
+      _descripcion_
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="left panel">
+    
+      <div class="item">
+        <h4>ESTADO:</h4>
+        <p class="placeholder">Sin iniciar / En proceso / Terminado</p>
+        <p class="dato link">
+          <span>
+            _estado_
+          </span>
+          <a href="file:///_ruta-archivo-seguimiento_" target="_blank">Ir a archivo de seguimiento </a> <!-- file://C:\...\Practicando\*tema*\*curso*\_SEGUIMIENTO-CURSO\*curso*.html -->
+        </p>
+      </div>
+
+      <div class="item">
+        <h4>WEB OFICIAL:</h4>
+        <p class="dato link">
+          <span>
+            _web_
+          </span> 
+          <a href="_web_" target="_blank"></a>
+        </p>
+      </div>
+
+      <div class="item">
+        <h4>FECHA DE PUBLICACIÓN / ÚLTIMA ACTUALIZACIÓN:</h4>
+        <p class="placeholder">mm/yyyy</p>
+        <p class="dato">
+          _f-publicacion_
+        </p>
+      </div>
+
+      <div class="item">
+        <h4>FECHA DE INICIO DEL CURSO:</h4>
+        <p class="placeholder">dd mmm yyyy</p>
+        <p class="dato">
+          _f-inicio_
+        </p>
+      </div>
+    
+      <div class="item">
+        <h4>AUTOR:</h4>
+        <p class="dato">
+          _autor_
+        </p>
+      </div>
+    
+      <div class="item">
+        <h4>PROFESOR:</h4>
+        <p class="dato">
+          _profesor_
+        </p>
+      </div>
+      
+      <div class="item">
+        <h4>IDIOMA:</h4>
+        <p class="dato">
+          _idioma_
+        </p>
+      </div>
+    
+      <div class="item">
+        <h4>ORIGEN:</h4>
+        <p class="placeholder">Udemy/Youtube/pc/otro(especificar)</p>
+        <p class="dato">
+          _origen_
+        </p>
+      </div>
+    
+      <div class="item">
+        <h4>TAGS / TEMAS GENERALES:</h4>
+        <p class="dato">
+          _tags_
+        </p>
+      </div>
+    
+      <div class="item">
+        <h4>REPOSITORIOS GITHUB:</h4>
+        <p class="placeholder">https://github.com/*/*.git</p>
+        <p class="dato">
+          _repositorios_
+        </p>
+      </div>
+    
+      <div class="item">
+        <h4>CARPETA DE PRÁCTICA:</h4>
+        <p class="placeholder">Ubicada dentro de la carpeta 'Practicando'</p>
+        <p class="dato link">
+          <span>
+            _carpeta-practica_
+          </span> 
+          <a href="file:///_carpeta-practica_" target="_blank"></a> <!-- file://C:\Users\LV\Desktop\Practicando\web\modern-html-css-beginning -->
+        </p>
+      </div>
+
+      <div class="item">
+        <h4>CARPETA DE RECURSOS:</h4>
+        <p class="placeholder">si el curso es WEB, esta carpeta es la misma que la Carpeta de Práctica</p>
+        <p class="dato link">
+          <span>
+            _carpeta-recursos_
+          </span> 
+          <a href="file:///_carpeta-recursos_" target="_blank"></a> <!-- file://C:\Users\LV\Downloads\*curso* -->
+        </p>
+      </div>
+    
+      <div class="item">
+        <h4>CONTENIDO CUANTITATIVO:</h4>
+        <p class="placeholder">
+          ### archivos - ### carpetas de la carpeta de recursos<br>
+          -NO- incluye la carpeta '_DATOS-DE-CURSO'. Si el curso es WEB, no es necesario poner este dato
+        </p>
+        <p class="dato">
+          _cuantitativo_
+        </p>
+      </div>
+    </div>
+    <div class="right panel">
+
+      <div class="item">
+        <h4>IMAGEN(ES) MINIATURAS:</h4>
+        <p class="placeholder">para rápida identificación.</p>
+        <div class="dato imgs">
+          <img src="./_htmlDep_/img/00.png" alt="">
+          <img src="./_htmlDep_/img/01.png" alt="">
+          <img src="./_htmlDep_/img/02.jpg" alt="">
+          <img src="./_htmlDep_/img/03.jpg" alt="">
+          <img src="./_htmlDep_/img/04.jpg" alt="">
+          <img src="./_htmlDep_/img/05.webp" alt="">
+          <img src="./_htmlDep_/img/06.jpg" alt="">
+          <img src="./_htmlDep_/img/07.jpg" alt="">
+          <img src="./_htmlDep_/img/08.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="item">
+        <h4>OBSERVACIONES:</h4>
+        <p class="dato caja">
+          _observaciones_
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="item full-ancho">
+    <h4>SUB CARPETAS (CAPÍTULOS):</h4>
+    <p class="placeholder">
+      carpeta de recursos\...
+    </p>
+    <p class="dato caja">
+      _capitulos_
+    </p>
+  </div>
+  
+  <!-- <p class="titulo">
+    FIN DE DATOS DE CURSO
+  </p> -->
+  
+</div>
+
+<div class="videos">
+  <p class="titulo">VIDEOS</p>    
+  <div class="capitulo">
+    <p class="txtCapitulo">1 - Introduction</p>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <div class="subcapitulo">
+      <p>\Subcapítulo(s)</p>
+      <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+      <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+      <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+      <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    </div>
+  </div>
+  <div class="capitulo">
+    <p class="txtCapitulo">2 - Primeros pasos</p>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+    <video class="videoClase" type="video/mp4" controls src="ruta"></video>
+  </div>
+</div>
+
+<div class="desarrollo">
+  <p class="titulo">Desarrollo de curso</p>    
+
+</div>
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------- HASTA AQUI -->
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- \***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\***\*\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\*** HISTORIAL DE COMMMITS
+
+Para el seguimiento y avance del curso, aquí se va registrando los commits más importantes de acuerdo a las lecciones, por ejemplo el inicio de cada clase (video), un tema importante que resaltar, etc. Los videos o capítulos que no merezcan un commit o que teniendo commits no sean de trascendencia para el curso, no deberían registrarse.
+Lo ideal es que al principio del curso se ponga todas las carpetas y archivos de video, luego con el seguimiento del curso, se va actualizando los commits para cada video si es necesario.
+Sólo Se hará un commit cada vez que se inicie un tema que sea importante, de otra forma se dejará que avance el curso incluso si se va avanzando los capítulos y estos no son importantes, no se debe hacer commits.
+Cuando se haga un commit de un capitulo (entiéndase por capítulo una carpera que contiene uno o varios videos del tema) y que necesite un commit, deberá hacerse inmediatamente un commit vacío de nombre 'registro', que nos permitirá incluir el hash del commit anterior (el del capítulo) en este registro.
+
+nnnnnnn **_ PRIMER COMMIT _**
+Capitulo 1 - nombre del tema\ # nombre de carpeta de capítulo
+nnnnnnn 001. nombre del primer video
+nnnnnnn 002. nmmbre del segundo video
+nnnnnnn 003. nombre del tercer video
+Capitulo 2 - nombre del tema\ # nombre de carpeta de capítulo
+nnnnnnn 004. nombre del primer video
+nnnnnnn 005. nmmbre del segundo video
+nnnnnnn 006. nombre del tercer video
+Capitulo 3 - nombre del tema\ # nombre de carpeta de capítulo
+nnnnnnn 007. nombre del primer video
+nnnnnnn 008. nmmbre del segundo video
+nnnnnnn 009. nombre del tercer video
+
+nnnnnnn = hash del commit
+
+\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*** PARA VIDEOS EN PC
+En esta área irán los enlaces a los videos del curso.
+Si es un curso en PC la ruta será del archivo local, si es en web la dirección de la página web.
+La idea de esta área es que en cada video revisado se pueda escribir comentarios o apuntar lo que sea resaltante del video.
+Además, de ser necesario, se pueden incluir tags de los temas tocados en cada video para rápida indentificación de los temas vistos. -->
+
+</body>
+</html>
